@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>Arduino the code</title>
+<style>
+nav {
+			    margin:0;
+			    background-color: White;
+			}
+			
+			/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+			nav ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			    }
+			
+			/* применяем inline-block позиционирование к элементам навигации */
+			nav ul li {
+			    margin:0;
+			    display:inline-block;
+			    background-color: White;
+			    }
+			
+			/* стилизуем ссылки */
+			nav a {
+			    display:block;
+			    padding:0 10px;
+			    color:green;
+			    font-family: 'Courier New';	 
+			    font-size:30px;
+			    line-height: 60px;
+			    text-decoration:none;
+			}
+			
+			/* изменяем цвет фона при наведении курсора */
+			nav a:hover {
+			    background-color: green;
+				color: white;
+		}
+
+body{
+margin:0;
+background: url(Фон1.png);
+background-size: 100%;
+}
+#div1{
+  position: absolute;
+  top: 30.9vw;
+  left: 2%;
+  width: 50vw;
+  font-size: 3vw;
+}
+#div2{
+  position: absolute;
+  top: 72vw;
+  left: 60vw;
+  font-size: 3vw;
+}
+#div4{
+  position:relative;
+  padding:20px;
+  left:15%;
+  font-size: 3vw;
+  width:70%;
+  }
+   .center {
+    text-align: center; /* Выравнивание по центру */ 
+   }
+
+   .round {
+    border-radius: 20px; 
+    border: 3px solid green; 
+    box-shadow: 0 0 7px #666;
+   }
+
+</style>
+</head>
+<body>
+<nav>
+			    <ul>
+			       
+					<ul>
+					<li><a href="Аквапоника.html">Главная</a></li>
+			                <li><a href="https://github.com/interpreter-It/aquaponics">Github</a></li>
+			                <li><a href="gelezo.html">Об Ардуино</a></li>
+			                
+					<li><a href="contacts.html">Контакты</a></li>
+			            </ul>
+			    </ul>
+			</nav>
+
+<img src="title.png" width=100%>
+<img src="titleArduino.png" width=100%>
+<div id = "div1"><H1>Arduino</H1> - это электронная платформа с открытым исходным кодом, основанная на простом в использовании аппаратного и программного обеспечения. Она предназначена для всех, кто занимается интерактивными проектами.</div>
+<div id = "div2">Подробнее: <a href="gelezo.html">об Ардуино</a></div>
+<div id = "div4">
+<br></br>
+<h1>Аквапоника - </h1>
+устройство считывания показаний с датчиков температуры, расстворённого кислорода, PH среды, проводимости и окислительно-восстановительного потанциала.
+Отлично подходит для экспериментов в образовательных учреждениях и мониторинга состояния экосистемы "аквапоника".
+</div>
+<div id = "div4">
+Микроконтроллер(Atmega328p) данного устройства связывается с программным обеспечением Aquaponics Zero на компьютере. 
+Все данные выводятся на экран. Вид программы:</div>
+<p class="center"><img src="Ponics.png" width=80% class="round"></p>
+<div id = "div4">
+Подробнее: <a href="code5.html">Программное обеспечение</a></div>
+</div>
+<div id = "div4">
+<h1>Датчики</h1>
+<li>Датчик расстворённого кислорода</li>
+<p class="center"><img src="EZO-O2-01.jpg" width=50% class="round"></p>
+Точно рассчитать расстворённый кислород в воде довольно сложно. После выполнения всех математических расчетов требуются сотни тестов химического титрования, чтобы подтвердить правильность показаний по всей шкале. Процесс мучительный. К счастью, вам не нужно ничего этого делать.
+<br></br>
+Диапазон: 0,01 - 100+ мг / л или
+0,1 - 400+% насыщения.
+<br></br>
+Точность: +/– 0,05 мг / л.
+<br></br>
+Время отклика: 1 чтение в секунду.
+<br></br>
+Протокол передачи данных: UART и I2C.
+<br></br>
+Адрес I2C по умолчанию: 97 (0x61).
+<br></br>
+Рабочее напряжение: 3,3 В - 5 В.
+<br></br>
+Формат данных: ASCII.
+<br></br>
+Размеры схемы: 13,97 x 20,16 мм (0,55 x 0,79 дюйма).
+<br></br>
+Масса: 1,77 г.
+<h4>Подключение:</h4>
+<p class="center"><img src="DO.png" width=80% class="round"></p>
+<a href=https://github.com/Atlas-Scientific/Ezo_I2c_lib target="_blank">Библиотека с примерами</a>
+<br></br><li>Датчик PH среды</li>
+<p class="center"><img src="EZO-pH-Circuit-01.jpg" width=50% class="round"></p>
+Диапазон: 0,001–14 000.
+<br></br>
+Точность: +/– 0,002.
+<br></br>
+Время отклика: 1 чтение в секунду.
+<br></br>
+Протокол передачи данных: UART и I2C.
+<br></br>
+Адрес I2C по умолчанию: 99 (0x63).
+<br></br>
+Рабочее напряжение: 3,3 В - 5 В.
+<br></br>
+Формат данных: ASCII.
+<br></br>
+Размеры схемы: 13,97 x 20,16 мм (0,55 x 0,79 дюйма).
+<br></br>
+Масса: 1,76 г.
+<h4>Подключение:</h4>
+<p class="center"><img src="PH.png" width=80% class="round"></p>
+<a href=https://github.com/Atlas-Scientific/Ezo_I2c_lib target="_blank">Библиотека с примерами</a>
+<br></br>
+<li>Датчик проводимости</li>
+<p class="center"><img src="EZO-Conductivity-Circuit-01.jpg" width=50% class="round"></p>
+От химического производства до гидропоники, проводимость является фундаментальным показателем химического состава воды. 
+<br></br>
+Диапазон:0,07 - 500 000+ мкСм / см.
+<br></br>
+Точность:+ / - 2%.
+<br></br>
+Время отклика: 1 чтение в секунду.
+<br></br>
+Протокол передачи данных:	UART и I2C.
+<br></br>
+Адрес I2C по умолчанию:	100 (0x64).
+<br></br>
+Рабочее напряжение:	3,3 В - 5 В.
+<br></br>
+Формат данных:	ASCII.
+<br></br>
+Размеры схемы:	13,97 x 20,16 мм (0,55 x 0,79 дюйма).
+<br></br>
+Масса:	1,77 г.
+<p class="center"><img src="EC.png" width=80% class="round"></p>
+<a href=https://github.com/Atlas-Scientific/Ezo_I2c_lib target="_blank">Библиотека с примерами</a>
+<br></br>
+</div>
+</body>
+</html>

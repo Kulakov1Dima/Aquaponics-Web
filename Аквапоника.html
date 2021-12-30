@@ -1,35 +1,322 @@
 <html>
 <head>
-<title>Aquaponics</title>
+<title>Aquaponics Main</title>
 <style>
-figure img { 
-  	width: 100%;
-  	object-fit: cover;
+nav {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+margin: 20px 0;
+background-color: none;
 }
-.indention{
-	position: absolute;
-	padding: 10px;	
-	top: 50%;
-	left: 43%;
-	transform: translate(0, -50%)
-	}
+			
+			/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+			nav ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			    }
+			
+			/* применяем inline-block позиционирование к элементам навигации */
+			nav ul li {
+			    margin: 0px -7px 0 0;
+			    display:inline-block;
+			    background-color: none;
+			    	 	
+			    }
+			
+			/* стилизуем ссылки */
+			nav a {
+			    display:block;
+			    padding:0 10px;
+			    color:black;
+			    font-family: 'Courier New';	 
+			    font-size:20px;
+			    text-decoration:none;
+			}
+			
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+opacity: 0.5;
+color: white;
+
+}
+
+#a1 {
+position: fixed;
+  top: 8.5vw;
+  left: 1px;
+padding: 10px;
+border-radius: 20px;
+color: White;
+font-family: 'Courier New';	 
+font-size:1.7vw;
+text-decoration:none;
+display: none;
+}
+
+#a1:hover {
+background-color: White;
+opacity: 0.7;
+color: Black;
+
+}
+
+#a2 {
+position: fixed;
+  top: 15vw;
+  left: 0.2vw;
+padding: 10px;
+border-radius: 20px;
+color: White;
+font-family: 'Courier New';	 
+font-size:1.7vw;
+text-decoration:none;
+display: none;
+}
+
+#a2:hover {
+background-color: White;
+opacity: 0.7;
+color: Black;
+
+}
+
+#a3 {
+position: fixed;
+  top: 9vw;
+  left: 12.5vw;
+padding: 10px;
+border-radius: 20px;
+color: White;
+font-family: 'Courier New';	 
+font-size:1.7vw;
+text-decoration:none;
+display: none;
+}
+
+#a3:hover {
+background-color: White;
+opacity: 0.7;
+color: Black;
+
+}
+
+#a5 {
+position: fixed;
+  top: 5vw;
+  left: 10.5vw;
+padding: 10px;
+border-radius: 20px;
+color: White;
+font-family: 'Courier New';	 
+font-size:1.7vw;
+text-decoration:none;
+display: none;
+}
+
+#a5:hover {
+background-color: White;
+opacity: 0.7;
+color: Black;
+
+}
+
+
+figure img { 
+padding:0;
+  	width: 100%;
+  	}
 .pos{
 position: relative;
-top: 50%;
-transform: translate(0, -50%)
+padding:0;
+margin:0;
+list-style: none;
+position: relative;
    }
 p {
-    font-size: 9vw;
+    font-size: 3vw;
+    font-family: 'Courier New';	
+    vertical-align:middle;
+    }
+
+#div1{
+  position: fixed;
+  top: -18vw;
+  left: -18vw;
+  width: 36vw;
+  height: 36vw;
+  border: 2px solid #082508;
+  border-radius: 50%;
+  padding: 1.4644em;
+  background: #082508;
+  opacity: 0.6;
+  display: none;
 }
+
+#div2 {
+  position: fixed;
+  top: -7vw;
+  left: -4vw;
+  width: 17em;
+  height: 17em;
+  border: 2px solid none;
+  border-radius: 50%;
+  line-height: 10em;  
+  background: none;
+  background-image: radial-gradient(circle closest-corner at 30% 30%, #082508 40%, transparent);
+  color: White;
+  font-family: 'Courier New';	 
+  font-size:1.75vw;
+  display: none;
+}
+#a4{
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  width: 27vw;
+  height: 27vw;
+  border: 2px solid #FFFF00;
+  border-radius: 50%;
+  padding: 2.5em;
+  background: #082508;
+  line-height: 2.1em;
+  text-align: center;
+  color: White;
+    font-size: 1.75vw;
+    font-family: 'Courier New';	
+    vertical-align:middle;
+    opacity: 0.8;
+  text-decoration:none;
+}
+
+#a4:hover {
+opacity: 0.7;
+color: white;
+
+}
+#div3{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 27vw;
+  height: 27vw;
+  border: 2px solid #FFFF00;
+  border-radius: 50%;
+  padding: 2.5em;
+  background: #082508;
+  line-height: 2.1em;
+  text-align: center;
+  color: White;
+    font-size: 1.75vw;
+    font-family: 'Courier New';	
+    vertical-align:middle;
+    opacity: 0.8;
+  text-decoration:none;
+}
+
+#div4{
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  width: 27vw;
+  height: 27vw;
+  border: 2px solid #FFFF00;
+  border-radius: 50%;
+  padding: 2.5em;
+  background: #082508;
+  line-height: 2.1em;
+  text-align: center;
+  color: White;
+    font-size: 1.75vw;
+    font-family: 'Courier New';	
+    vertical-align:middle;
+    opacity: 0.8;
+  text-decoration:none;
+}
+
+
+
+.circle {
+  background: #006400;
+  border-radius: 60%;
+  border: 2px solid #FFFF00;
+  color: #fff;
+  height: 5em;
+  position: relative;
+  width: 5em;
+}
+
+.circle-icon {
+  fill: currentColor;
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  stroke: #FFFF00;
+  stroke-width: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
 </style>
+
+<script>
+function viewMenu(){
+  document.getElementById("div1").style.display = "block";
+  document.getElementById("div2").style.display = "block";
+  document.getElementById("a1").style.display = "block";
+  document.getElementById("a2").style.display = "block";
+  document.getElementById("a3").style.display = "block";
+  document.getElementById("a5").style.display = "block";
+};
+function noviewMenu(){
+  document.getElementById("div1").style.display = "none";
+  document.getElementById("div2").style.display = "none";
+  document.getElementById("a1").style.display = "none";
+  document.getElementById("a2").style.display = "none";
+  document.getElementById("a3").style.display = "none";
+  document.getElementById("a5").style.display = "none";
+};
+
+</script>
+
 </head>
  
-<body>
+<body bgcolor="#e5e5e5" link="yellow" vlink="yellow" alink="#ff0000">
 <div class="pos">
-<figure><img src="background.png"></figure>
-<div class="indention">
-	<p>Aquaponics<p>
+<img src="background.png" onclick="noviewMenu()" width=100%>
+<nav>
+			    <ul>
+			       
+					<ul>
+					<li><a onclick="viewMenu()">
+<div class="circle">
+  <svg class="circle-icon" viewBox="0 0 24 24" width="100px" height="100px">
+    <line x1="2" x2="22" y1="5"  y2="5"  stroke-width="3" stroke-linecap="round"/>
+    <line x1="2" x2="22" y1="12" y2="12" stroke-width="3" stroke-linecap="round"/>
+    <line x1="2" x2="22" y1="19" y2="19" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+</div></a></li>
+			            <!-- <li><a href="https://github.com/interpreter-It/aquaponics">Github</a></li>
+			          --></ul>
+			    </ul>
+			</nav>
+
+<div id="div1"></div>
+<div id="div2"><pre>        Главная</pre></div>
+<a id="a1" href="https://github.com/interpreter-It/aquaponics">Github</a>
+<a id="a2" href="gelezo.html"> об Arduino</a>
+<a id="a3" href="code5.html">Софт</a>
+<a id="a4" href="ponix.html"><b>Аквапоника - устройство, обеспечивающее искусственную экосистему, в которой ключевыми являются три типа живых организмов: водные животные, растения и бактерии.</b></a>
+<a id="a5" href="contacts.html">Контакты</a>
+<div id="div3"><b> Работает по принципу экосистемы рыб и растений: рыбы обеспечивают питание растениям, а растения очищают воду.</b></div>
+<img src="Аквапоника.jfif" onclick="noviewMenu()" width=100%>
+<img src="original.jpg" onclick="noviewMenu()" width=100%>
+<div id="div4"><b>Наша аквапоника работает на основе апаратно-вычислительной платформы "Ардуино".</b><a href="Arduino.html">Перейти на страницу описания...</a></div>
 </div>
-<div>
 </body>
 </html>
