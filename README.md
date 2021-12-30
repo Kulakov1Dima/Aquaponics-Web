@@ -22,3 +22,5 @@
 
 ![image](https://user-images.githubusercontent.com/84613812/147714109-0178e343-103f-4ee0-adc9-19199dbcd1f0.png)
 
+- Контакты
+- Об ардуино
