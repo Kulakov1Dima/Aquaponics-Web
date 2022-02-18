@@ -24,3 +24,5 @@
 
 - Контакты
 - Об ардуино
+#Сайт был выложен на хостинг
+https://aquaponicszero.000webhostapp.com/
